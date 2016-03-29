@@ -1,8 +1,8 @@
-<ul class="pager">
+<ul class="pn-pager">
 {% if page.previous %}
-  <li class="previous"><a href="{{ page.previous.url }}">&larr; 上一篇</a></li>
+  <li class="previous"><a href="{{ page.previous.url }}"><strong>上一篇</strong><br>{{ page.previous.title }}</a></li>
 {% endif %}
 {% if page.next %}
-  <li class="next"><a href="{{ page.next.url }}">下一篇 &rarr;</a></li>
+  <li class="next"><a href="{{ page.next.url }}"><strong>下一篇</strong><br>{{ page.next.title }}</a></li>
 {% endif %}
 </ul>

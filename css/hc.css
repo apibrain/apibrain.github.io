@@ -461,9 +461,36 @@ time
   text-shadow:1px 1px #fff
 }
 
-.pager li > a,.pager li > span
-{
-  border-radius:.5em
+.pn-pager {
+  margin: 0;
+  padding: 0;
+}
+.pn-pager li {
+  list-style: none;
+}
+.pn-pager li a, .pn-pager li a:visited {
+  display: inline-block;
+  width: 45%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px 12px;
+  color: #777;
+  font-size: 16px;
+}
+.pn-pager li a:hover, .pn-pager li a:hover strong {
+  background-color: #d90006;
+  border-color: #d90006;
+  color: #fff;
+}
+.pn-pager li a strong {
+  color: #333;
+}
+.pn-pager li.previous a {
+  float: left;
+}
+.pn-pager li.next a {
+  float: right;
 }
 
 #self

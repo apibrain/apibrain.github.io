@@ -3,6 +3,8 @@ layout: post
 title: >
     「译」ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？
 category: 前端开发
+description: >
+    1996 年，网景将 JavaScript 提交给 ECMA International（欧洲计算机制造商协会）进行标准化，并最终确定出新的语言标准，它就是 ECMAScript。
 ---
 
 JavaScript 有着很奇怪的命名史。
