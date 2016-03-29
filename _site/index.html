@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
 <title>apibrain 的技术博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="关于技术的总结和归纳">
+<meta name="description" content="关于技术的总结、归纳和思考">
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/hc.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
       <li><a href="/list.html">文章列表</a></li>
       <li><a href="/links.html">有用的链接</a></li>
       <li><a href="/projects.html">我的项目</a></li>
-      <li><a href="/about.html">关于我</a></li>
+      <li><a href="/about/">关于我</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -41,15 +41,24 @@
 
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
+  <div class="sidebar-author row">
+    <div class="sidebar-face col-lg-4">
+      <a href="/"><img src="../images/face.jpg" width="60" height="60" alt="apibrain"></a>
+    </div>
+    <div class="sidebar-brand col-lg-8">
+      <h1 class="brand"><a href="/">apibrain</a></h1>
+      <span class="text-muted">半吊子程序员/厨师</span>
+    </div>
+  </div>
+  <hr>
+  <div class="sidebar-subtitle text-center"><h3>「关于技术的总结、归纳和思考」</h3></div>
+  <hr>
   <ul class="sidebar-nav">
-    <li class="sidebar-face"><a href="/"><img src="../images/face.jpg" width="80" height="80" alt="apibrain"></a></li>
-    <li class="sidebar-brand"><a href="/"><h1 class="brand">apibrain</h1></a><h3>关于技术的总结和归纳</h3></li>
-    <hr />
     <li><a href="/list.html">文章列表</a></li>
     <li><a href="/links.html">有用的链接</a></li>
     <li><a href="/projects.html">我的项目</a></li>
-    <li><a href="/about.html">关于我</a></li>
-    <hr />
+    <li><a href="/about/">关于我</a></li>
+    <hr>
     <div id="social-wrapper">
       <li> <a href="http://www.github.com/apibrain"><i class="fa fa-github"></i> github</a> </li>
     </div>
@@ -64,7 +73,7 @@
     <div class="showcase-wrapper sticky">
       <div class="showcase-text">
           
-          <span class="badge lazy"><smaller>FRESHLY MINTED</smaller></span><br>欢迎来到 apibrain 的技术博客<br><a href="/welcome.html"><button type="button" class="btn btn-default showcase-button">Read More</button></a>
+          <span class="badge lazy"><smaller>最新文章</smaller></span><br>欢迎来到 apibrain 的技术博客<br><a href="/welcome.html"><button type="button" class="btn btn-default showcase-button">Read More</button></a>
           
       </div>
     </div>
@@ -74,7 +83,7 @@
   <div class="container">
     <div id="welcome-greeting">
       <h1>关于这个博客</h1>
-      <p class="lead">本博客分享的技术文章，大多是和我本人工作相关的技术。可能，更多的是工作的一种总结和提炼，最终形成一篇「技术博文」。由于我本人目前从事的更多的是web技术相关工作，所以，你会在这里看到的技术文章，也更偏向于web开发相关的文章。除此以外，也包含一些关于工具、操作系统的使用技巧。</p>
+      <p>本博客分享的技术文章，大多是和我本人工作相关的技术。可能，更多的是工作的一种总结和提炼，最终形成一篇「技术博文」。由于我本人目前从事的更多的是web技术相关工作，所以，你会在这里看到的技术文章，也更偏向于web开发相关的文章。除此以外，也包含一些关于工具、操作系统的使用技巧。<br><br><a href="/about/">「了解更多」</a></p>
       <hr />
     </div>
   </div>
@@ -117,9 +126,10 @@
   <footer>
     <p class="text-muted credit">
       &copy; 2016 apibrain &middot;
-      Powered by <a href="https://jekyllrb.com" rel="nofollow external" target="_blank">Jekyll</a> &amp; theme designed by <a href="https://github.com/arnp" rel="nofollow external" target="_blank">arnp</a>
+      Powered by <a href="https://jekyllrb.com" rel="nofollow external" target="_blank">Jekyll</a>  &middot;
+      主题设计：<a href="https://github.com/arnp/herring-cove" rel="nofollow external" target="_blank">Herring Cove</a>
       <br>
-      Generated at 2016-03-29 13:53:57 +0800
+      Generated at 2016-03-29 17:17:59 +0800
     </p>
   </footer>
 </div>

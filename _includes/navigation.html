@@ -14,7 +14,7 @@
       <li><a href="{{ site.baseurl }}/list.html">文章列表</a></li>
       <li><a href="{{ site.baseurl }}/links.html">有用的链接</a></li>
       <li><a href="{{ site.baseurl }}/projects.html">我的项目</a></li>
-      <li><a href="{{ site.baseurl }}/about.html">关于我</a></li>
+      <li><a href="{{ site.baseurl }}/about/">关于我</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -22,15 +22,24 @@
 
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
+  <div class="sidebar-author row">
+    <div class="sidebar-face col-lg-4">
+      <a href="{{ site.baseurl }}/"><img src="../images/face.jpg" width="60" height="60" alt="apibrain"></a>
+    </div>
+    <div class="sidebar-brand col-lg-8">
+      <h1 class="brand"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+      <span class="text-muted">{{ site.career }}</span>
+    </div>
+  </div>
+  <hr>
+  <div class="sidebar-subtitle text-center"><h3>「{{ site.description }}」</h3></div>
+  <hr>
   <ul class="sidebar-nav">
-    <li class="sidebar-face"><a href="{{ site.baseurl }}/"><img src="../images/face.jpg" width="80" height="80" alt="apibrain"></a></li>
-    <li class="sidebar-brand"><a href="{{ site.baseurl }}/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
-    <hr />
     <li><a href="{{ site.baseurl }}/list.html">文章列表</a></li>
     <li><a href="{{ site.baseurl }}/links.html">有用的链接</a></li>
     <li><a href="{{ site.baseurl }}/projects.html">我的项目</a></li>
-    <li><a href="{{ site.baseurl }}/about.html">关于我</a></li>
-    <hr />
+    <li><a href="{{ site.baseurl }}/about/">关于我</a></li>
+    <hr>
     <div id="social-wrapper">
       <li> <a href="{{ site.github }}"><i class="fa fa-github"></i> github</a> </li>
     </div>

@@ -1,7 +1,7 @@
 body
 {
   color:#2c3e50;
-  background-color:#f0f0f0;
+  background-color:#fff;
   width:100%;
   border-top:solid #d90006;
   border-width:4px;
@@ -100,7 +100,7 @@ a.navbar-brand img {
   margin-left:-250px;
   left:250px;
   width:250px;
-  background:#f8f8f8;
+  background:#f0f0f0;
   position:fixed;
   height:100%;
   overflow-y:auto;
@@ -110,23 +110,30 @@ a.navbar-brand img {
   transition:all .4s ease 0;
   border-width:4px
 }
-
+#sidebar-wrapper hr {
+  border-color: #f6f6f6;
+}
+.sidebar-author {
+  position: relative;
+  top: 20px;
+  padding-left: 20px;
+  margin-right: 0;
+  margin-bottom: 60px;
+}
 .sidebar-nav
 {
-  position:absolute;
+  position:relative;
   top:0;
   width:250px;
   list-style:none;
   margin:0;
-  padding:30px 0 0
+  padding:10px 0 0
 }
 
 .sidebar-nav li
 {
   line-height:30px;
   text-indent:40px;
-  font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  font-weight:200;
   color:#9c9c9c;
   text-shadow:1px 1px #fff
 }
@@ -150,22 +157,30 @@ a.navbar-brand img {
 {
   text-decoration:none
 }
-.sidebar-nav > .sidebar-face a:hover {
+.sidebar-face a:hover {
   background-color: transparent;
 }
-.sidebar-nav > .sidebar-face img
+.sidebar-face img
 {
   border-radius: 100%;
+  border: 2px solid #fff;
 }
-.sidebar-nav > .sidebar-brand
+.sidebar-brand
 {
-  font-size:20px
+  margin-left: -10px;
+}
+.sidebar-brand > h1 {
+  margin: 0;
+}
+.sidebar-brand > p {
+  font-size: 14px;
 }
 
-.sidebar-nav > .sidebar-brand > h3
+.sidebar-subtitle > h3
 {
+  position: relative;
   font-size:15px;
-  font-weight:100;
+  font-weight:200;
   color:#5d5f67
 }
 
@@ -178,11 +193,18 @@ a.navbar-brand img {
 
 .brand
 {
-  font-weight:800;
-  color:#6c7077;
-  font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
   font-size:1.4em;
-  text-shadow:1px 1px #fff
+}
+.brand a, .brand a:visited {
+  font-weight:200;
+  color:#555;
+  font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
+  text-shadow:1px 1px #fff;
+  font-size: 32px;
+}
+.brand a:hover {
+  color: #666;
+  text-decoration: none;
 }
 
 .brand:hover
@@ -193,17 +215,6 @@ a.navbar-brand img {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s
-}
-
-.sidebar-nav > .sidebar-brand a
-{
-  color:#999
-}
-
-.sidebar-nav > .sidebar-brand a:hover
-{
-  color:#fff;
-  background:none
 }
 
 .content-header
@@ -224,11 +235,10 @@ blockquote
   /*border-right:2px solid #d90006;
   margin-left:-40px;
   margin-right:-40px;*/
-  border-left:2px solid #d90006;
+  border-left:4px solid #d90006;
   padding-left:15px;
-  background:#f3f3f7;
   font-size: 1em;
-  color: #777;
+  color: #999;
   margin-bottom: 2em;
 }
 
@@ -310,22 +320,22 @@ pre
   font-size:3em;
   font-weight:700;
   color:#d90006;
-  line-height:130%
+  line-height:200%
 }
 
-#welcome-greeting > h2
+#welcome-greeting > p
 {
-  font-size:2em;
-  font-weight:100;
-  color:#2e2e2e;
+  font-size:1.5em;
+  color:#444;
   padding-top:0;
-  line-height:140%
+  line-height:1.65em;
 }
 
-#welcome-greeting h2 a
+#welcome-greeting p a
 {
   font-weight:100;
-  color:#d90006
+  color:#d90006;
+  border-bottom: 0 none;
 }
 
 .credit
@@ -378,8 +388,8 @@ pre
 .article-title
 {
   font-size:2.5em;
-  font-weight:700;
-  color:#d90006;
+  font-weight:300;
+  /*color:#d90006;*/
   padding-top:15px
 }
 
@@ -387,11 +397,6 @@ pre
 {
   text-shadow:1px 1px #fff;
   color:#b6b6b6
-}
-
-img
-{
-  max-width:100%;
 }
 
 #article
@@ -407,12 +412,12 @@ img
   padding-bottom:30px
 }
 .post h2 {
-  font-size: 1.8em;
-  margin-top: 1em;
-  margin-bottom:1em;
+  font-size: 2em;
+  margin-top: 1.2em;
+  margin-bottom:1.2em;
 }
 .post h3 {
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 .post ul {
   margin-bottom: 1em;
@@ -762,8 +767,6 @@ time
       padding: 0 10px 0 10px;
   }
 
-
-
   #welcome-greeting > h1 {
     font-size: 2em;
   }
@@ -792,5 +795,16 @@ time
   }
   .article-title {
     font-size: 1.6em;
+    font-weight: 700;
+  }
+  .post h2 {
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom:1em;
+    font-weight: 700;
+  }
+  .post h3 {
+    font-size: 1.2em;
+    font-weight: 700;
   }
 }

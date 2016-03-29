@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
 <title>欢迎来到 apibrain 的技术博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="关于技术的总结和归纳">
+<meta name="description" content="关于技术的总结、归纳和思考">
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/hc.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
       <li><a href="/list.html">文章列表</a></li>
       <li><a href="/links.html">有用的链接</a></li>
       <li><a href="/projects.html">我的项目</a></li>
-      <li><a href="/about.html">关于我</a></li>
+      <li><a href="/about/">关于我</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -41,15 +41,24 @@
 
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
+  <div class="sidebar-author row">
+    <div class="sidebar-face col-lg-4">
+      <a href="/"><img src="../images/face.jpg" width="60" height="60" alt="apibrain"></a>
+    </div>
+    <div class="sidebar-brand col-lg-8">
+      <h1 class="brand"><a href="/">apibrain</a></h1>
+      <span class="text-muted">半吊子程序员/厨师</span>
+    </div>
+  </div>
+  <hr>
+  <div class="sidebar-subtitle text-center"><h3>「关于技术的总结、归纳和思考」</h3></div>
+  <hr>
   <ul class="sidebar-nav">
-    <li class="sidebar-face"><a href="/"><img src="../images/face.jpg" width="80" height="80" alt="apibrain"></a></li>
-    <li class="sidebar-brand"><a href="/"><h1 class="brand">apibrain</h1></a><h3>关于技术的总结和归纳</h3></li>
-    <hr />
     <li><a href="/list.html">文章列表</a></li>
     <li><a href="/links.html">有用的链接</a></li>
     <li><a href="/projects.html">我的项目</a></li>
-    <li><a href="/about.html">关于我</a></li>
-    <hr />
+    <li><a href="/about/">关于我</a></li>
+    <hr>
     <div id="social-wrapper">
       <li> <a href="http://www.github.com/apibrain"><i class="fa fa-github"></i> github</a> </li>
     </div>
@@ -58,14 +67,43 @@
 
       <div class="container">
         <div id="article">
-  <div class="article-title">欢迎来到 apibrain 的技术博客</div>
+  <h1 class="article-title">欢迎来到 apibrain 的技术博客</h1>
   <p class="meta">
+  	
     <small>
-      &nbsp;<i class="fa fa-calendar-o"></i> 28 Mar 2016
+      &nbsp;<i class="fa fa-calendar-o"></i> 2016-03-28
+      
     </small>
+    
   </p> <hr/>
   <div class="post">
-    <p>欢迎来到 apibrain 的技术博客，本站分享的技术文章，大多是和我本人工作相关的技术。可能，更多的是工作的一种总结和提炼，最终形成一篇「技术博文」。由于我本人目前从事的更多的是web技术相关工作，所以，你会在这里看到的技术文章，也更偏向于web开发相关的文章。</p>
+    <h2>有什么？</h2>
+
+<p>欢迎来到 apibrain 的技术博客，本站分享的技术文章，大多是和我本人工作相关的技术。可能，更多的是工作的一种总结和提炼，最终形成一篇「技术博文」。由于我本人目前从事的更多的是web技术相关工作，所以，你会在这里看到的技术文章，也更偏向于web开发相关的文章。</p>
+
+<h2>apibrain 是谁？</h2>
+
+<p>本人网名叫「apibrain」，取 <code>api</code> + <code>brain</code> 之意，即「api大脑」。目前，本人从事web项目相关开发工作，带领了一个不超过10人的小团队。所涉及的技术包括：</p>
+
+<h3>服务器端</h3>
+
+<ul>
+<li>PHP (世界上最好的语言 ^_^)</li>
+<li>Linux (目前正在学习)</li>
+<li>MySQL (正在考虑某些场景引入Redis)</li>
+</ul>
+
+<h3>客户端</h3>
+
+<ul>
+<li>Javascript (使用jQuery作为项目js框架)</li>
+<li>CSS (部分项目用到了Bootstrap)</li>
+<li>HTML</li>
+</ul>
+
+<h2>为何会有这个博客？</h2>
+
+<p>在一个领域工作久了，如果只是为了完成工作而工作，人的进步是不明显的。为了让自己得到更好的提升，有更多的积累，我想我需要一个博客来记录工作中的经验以及各种坑。作为IT技术人员，是否弄懂了某一门技术，最直接的方法便是「写下来」，写得通俗易懂，并和大家分享。对自己、对他人，都是一种提升。</p>
 
 <blockquote>
 <p>有总结才有收获，通过慢慢的积累，也是一种进步。</p>
@@ -112,9 +150,10 @@
   <footer>
     <p class="text-muted credit">
       &copy; 2016 apibrain &middot;
-      Powered by <a href="https://jekyllrb.com" rel="nofollow external" target="_blank">Jekyll</a> &amp; theme designed by <a href="https://github.com/arnp" rel="nofollow external" target="_blank">arnp</a>
+      Powered by <a href="https://jekyllrb.com" rel="nofollow external" target="_blank">Jekyll</a>  &middot;
+      主题设计：<a href="https://github.com/arnp/herring-cove" rel="nofollow external" target="_blank">Herring Cove</a>
       <br>
-      Generated at 2016-03-29 13:53:57 +0800
+      Generated at 2016-03-29 17:17:59 +0800
     </p>
   </footer>
 </div>
