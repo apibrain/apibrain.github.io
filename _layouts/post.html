@@ -5,7 +5,8 @@ layout: default
   <div class="article-title">{{ page.title }}</div>
   <p class="meta">
     <small>
-      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string}}
+      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string | date: "%Y-%m-%d" }}
+      {{ page.author }}
     </small>
   </p> <hr/>
   <div class="post">
