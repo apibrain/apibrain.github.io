@@ -86,6 +86,12 @@ p
   text-decoration: none;
   border-bottom: 1px #b1b1b1 solid;
 }
+a.navbar-brand {
+  border-bottom: 0 none;
+}
+a.navbar-brand img {
+  border-radius: 100%;
+}
 
 #sidebar-wrapper
 {
@@ -142,8 +148,10 @@ p
 {
   text-decoration:none
 }
-
-.sidebar-nav > .sidebar-face > img
+.sidebar-nav > .sidebar-face a:hover {
+  background-color: transparent;
+}
+.sidebar-nav > .sidebar-face img
 {
   border-radius: 100%;
 }
@@ -298,14 +306,6 @@ pre
   font-weight:700;
   color:#d90006;
   line-height:130%
-}
-
-#welcome-greeting h1:hover
-{
-  font-size:3em;
-  font-weight:700;
-  color:#2d4440;
-  transition:all .5s ease 0
 }
 
 #welcome-greeting > h2

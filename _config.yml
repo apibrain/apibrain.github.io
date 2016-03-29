@@ -3,14 +3,10 @@ author: Herring Cove
 baseurl: ''
 description: 关于技术的总结和归纳
 github: http://www.github.com/apibrain
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
 email: apibrain[at]gmail.com
 # disqus: diqus-username
 
 ##Make sure to edit the above fields, especially for disqus.
-
 
 highlighter: pygments
 markdown: redcarpet
