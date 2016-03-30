@@ -806,7 +806,9 @@ time
 }
 
 @media (max-width:767px) {
-
+.recent-posts time {
+    display: none;
+  }
 #wrapper {
   padding-left: 0;
   padding-top: 20px;
