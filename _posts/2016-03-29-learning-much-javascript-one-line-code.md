@@ -20,7 +20,7 @@ description: >
 
 ## 选取一个页面上所有的元素
 
-首先需要做的是选取所有的元素，Addy用了只能在浏览器控制台中使用的$$。你可以在自己的浏览器的javascript控制台中输入 `$$('a')`，然后你会得到一个含有当前页面所有锚元素的列表。
+首先需要做的是选取所有的元素，Addy用了只能在浏览器控制台中使用的 `$$`。你可以在自己的浏览器的javascript控制台中输入 `$$('a')`，然后你会得到一个含有当前页面所有锚元素的列表。
 
 `$$` 函数是现代浏览器命令行的API的一部分，它等同于使用 `document.querySelectorAll` 方法。你可以将一个CSS选择器作为参数传入 `document.querySelectorAll` 去选取当前页面的元素。所以如果你想在浏览器的控制台以外使用那个单行代码，你可以用 `document.querySelectorAll('*')`来替代 `$$('*')`。点击这个[stackoverflow](http://stackoverflow.com/questions/8981211/what-is-the-source-of-the-double-dollar-sign-selector-query-function-in-chrome-f#answer-10308917)问答可以进一步了解**$$**。
 
