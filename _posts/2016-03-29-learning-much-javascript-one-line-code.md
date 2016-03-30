@@ -18,15 +18,15 @@ description: >
 
 将它放在你的浏览器控制台中运行，页面中各层的HTML就会被不同的颜色标记出来。很酷对不对？基本上，这行代码**获取了页面中所有元素，然后给它们加上1px，颜色随机的边框**。虽然它的原理很简单，但是想要自己写出这样的代码，你得熟练掌握Web开发的方方面面。下面让我们一起学习它们。
 
-##选取一个页面上所有的元素
+## 选取一个页面上所有的元素
 
 首先需要做的是选取所有的元素，Addy用了只能在浏览器控制台中使用的$$。你可以在自己的浏览器的javascript控制台中输入 `$$('a')`，然后你会得到一个含有当前页面所有锚元素的列表。
 
-$$函数是现代浏览器命令行的API的一部分，它等同于使用 `document.querySelectorAll` 方法。你可以将一个CSS选择器作为参数传入 `document.querySelectorAll` 去选取当前页面的元素。所以如果你想在浏览器的控制台以外使用那个单行代码，你可以用 `document.querySelectorAll('*')`来替代 `$$('*')`。点击这个[stackoverflow](http://stackoverflow.com/questions/8981211/what-is-the-source-of-the-double-dollar-sign-selector-query-function-in-chrome-f#answer-10308917)问答可以进一步了解**$$**。
+`$$` 函数是现代浏览器命令行的API的一部分，它等同于使用 `document.querySelectorAll` 方法。你可以将一个CSS选择器作为参数传入 `document.querySelectorAll` 去选取当前页面的元素。所以如果你想在浏览器的控制台以外使用那个单行代码，你可以用 `document.querySelectorAll('*')`来替代 `$$('*')`。点击这个[stackoverflow](http://stackoverflow.com/questions/8981211/what-is-the-source-of-the-double-dollar-sign-selector-query-function-in-chrome-f#answer-10308917)问答可以进一步了解**$$**。
 
 非常好！对于我来说，能从这行代码中学习到 **$$函数** 就已经很满足了。然而在一个页面上选取所有元素的方法还有很多。如果你有看过gist上面的评论，你会发现有人在讨论这个话题。其中一个人就是Mathias Bynens（那里有很多大神！），他告诉我们可以用document.all去实现这个功能，并且能在所有的浏览器上运行。
 
-##遍历元素
+## 遍历元素
 
 于是我们得到了存储所有的元素的NodeList，然后想给它们一个一个加上彩色的边框。不过等等，我们的代码里到底是怎么写的呢？
 
