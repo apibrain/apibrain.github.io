@@ -8,14 +8,17 @@ github: http://www.github.com/apibrain
 email: apibrain[at]gmail.com
 # disqus: diqus-username
 
-##Make sure to edit the above fields, especially for disqus.
+# website
+url: http://apibrain.com/
 timezone: Asia/Shanghai
 permalink: /:title.html
-# highlighter: pygments
+
+# writing
 markdown: kramdown
 kramdown:
   input: GFM
 
+#default
 defaults:
   - scope:
       path: ""
