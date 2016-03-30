@@ -4,17 +4,27 @@ layout: default
 <div id="article">
   <h1 class="article-title">{{ page.title }}</h1>
   <p class="meta">
-  	{% if page.date %}
+    {% if page.date %}
     <small>
-      &nbsp;<i class="fa fa-calendar-o"></i> {{ page.date | date_to_string | date: "%Y-%m-%d" }}
-      {{ page.author }}
+      &nbsp;<i class="fa fa-fw fa-calendar-o"></i> {{ page.date | date_to_string | date: "%Y-%m-%d" }}
     </small>
     {% endif %}
-  </p> <hr/>
+
+    {% if page.category %}
+    <small>
+      &nbsp;<i class="fa fa-fw fa-folder-o"></i> {{ page.category }}
+    </small>
+    {% endif %}
+
+  </p>
+  <hr>
   <div class="post">
     {{ content }}
   </div>
 </div>
+
+{% include tags.html %}
+<hr>
 <!-- {% include share.html %} -->
 {% include pager.html %}
 <!-- {% include comment.html %} -->

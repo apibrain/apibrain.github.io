@@ -1,0 +1,11 @@
+- slug: skill
+  name: 技巧
+
+- slug: random-color
+  name: 随机颜色
+
+- slug: bit-operate
+  name: 位运算
+
+- slug: js-standardize
+  name: js标准化

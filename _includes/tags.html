@@ -1,0 +1,16 @@
+{% assign tags = '' %}
+{% if page.tags and page.tags.size > 0 %}
+  {% for post_tag in page.tags %}
+    {% for data_tag in site.data.tags %}
+      {% if data_tag.name == post_tag %}
+          {% capture tags_content %}{{ tags }}<a href="/tag/{{ data_tag.slug }}/">{{ data_tag.name }}</a> {% endcapture %}
+          {% assign tags = tags_content %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
+
+{% if tags != '' %}
+<div class="meta-tags">标签：{{ tags }}</div>
+{% endif %}
