@@ -232,10 +232,8 @@ a.navbar-brand img {
 
 blockquote
 {
-  /*border-right:2px solid #d90006;
-  margin-left:-40px;
-  margin-right:-40px;*/
-  border-left:4px solid #d90006;
+  border-left:6px solid #D6DBE0;
+  background-color: #f8f8f8;
   padding-left:15px;
   font-size: 1em;
   color: #999;
