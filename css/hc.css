@@ -844,7 +844,7 @@ time
 }
 
 @media screen and (max-width: 500px) {
-  p, .post ul li {
+  blockquote, blockquote p, p, .post ul li {
     font-size: 1em;
   }
   #welcome-greeting > p
