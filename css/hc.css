@@ -238,6 +238,7 @@ blockquote
 
 blockquote p {
   margin-bottom: 1em;
+  line-height: 1.5em;
 }
 
 ul,ol
@@ -854,7 +855,7 @@ time
   .container {
     width: 100%;
     margin: 0 0 0 0;
-    padding: 0px 15px 10px 15px;
+    padding: 0 15px;
   }
 
   #article {
