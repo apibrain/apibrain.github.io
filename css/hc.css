@@ -6,13 +6,13 @@ body
   border-top:solid #d90006;
   border-width:4px;
   font-size: 14px;
-  font-family: "Hiragino Sans GB", Arial, "Microsoft Yahei", Helvetica, "Open Sans", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6
 {
   color:#d90006;
-  font-family: "Hiragino Sans GB", Arial, "Microsoft Yahei", helvetica, "Open Sans", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
 
 h1
@@ -38,7 +38,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
 
 p
 {
-  font-family:"Hiragino Sans GB", "Helvetica Neue", helvetica, "Open Sans", sans-serif;
+  font-family:"Hiragino Sans GB", "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
   font-weight:200;
   line-height: 1.75em;
   font-size: 1.2em;
