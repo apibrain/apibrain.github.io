@@ -54,11 +54,6 @@ p
   padding-bottom:30px
 }
 
-.homepage-posts
-{
-  list-style:disc;
-}
-
 .container
 {
   width:80%;
@@ -75,7 +70,7 @@ p
 #wrapper
 {
   padding-left:250px;
-  transition:all .5s ease 0
+  transition:all .5s ease 0;
 }
 
 .navbar
@@ -90,6 +85,8 @@ p
 }
 a.navbar-brand {
   border-bottom: 0 none;
+  color: #333!important;
+  font-size: 24px;
 }
 a.navbar-brand img {
   border-radius: 100%;
@@ -360,15 +357,15 @@ pre
 {
   bottom:0;
   width:100%;
-  font-size:.8em;
+  font-size:.9em;
   text-shadow:1px 1px #fff;
-  padding-left:20px;
+  padding-left:0px;
   margin-bottom:0;
-  padding-bottom:5px;
-  padding-top:5px;
-  margin-top:40px;
+  padding-bottom:0px;
+  padding-top:0px;
+  margin-top:0px;
   z-index:1;
-  color:#cdcdcd
+  color:#cdcdcd;
 }
 
 .label-danger
@@ -499,8 +496,7 @@ time
 {
   color:#c9c9c9;
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  font-weight:100;
-  text-shadow:1px 1px #fff
+  font-weight:200;
 }
 
 .pn-pager {
@@ -554,15 +550,34 @@ time
 {
   background-color:#fff;
   color:#4d4d4d;
-  box-shadow:1px 1px 0 1px #e8e8e8;
   margin:10px 0;
-  padding:10px 40px
+  border: 0px solid #aaa;
 }
 
 .recent-posts h1
 {
   padding-bottom:10px;
-  font-size:1.6em
+  font-size:2em
+}
+.homepage-posts {
+  margin-left: 0;
+  margin-bottom: 1em;
+  padding-left: 0;
+  list-style: none;
+}
+.homepage-posts li {
+  height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.homepage-posts li a {
+  border-bottom: 0 none;
+}
+.homepage-posts time, .homepage-posts h4 {
+  font-size: 1.2em;
+  margin: 0;
+  border: 0px solid #f00;
+  line-height: 36px;
 }
 
 .project-container
@@ -830,17 +845,17 @@ time
 }
 
 @media screen and (max-width: 500px) {
-  #welcome-greeting h2 {
-   font-size: 15px;
-   transition: all 0.2s ease 0s;
-   font-weight: 200;
-   line-height: 30px;
-
+  p, .post ul li {
+    font-size: 1em;
+  }
+  #welcome-greeting > p
+  {
+    font-size:1.2em;
   }
   .container {
     width: 100%;
     margin: 0 0 0 0;
-    padding: 15px 15px 0 15px;
+    padding: 0px 15px 10px 15px;
   }
 
   #article {
@@ -859,32 +874,31 @@ time
     font-size: 2em;
   }
 
-  .recent-posts {
-    padding: 10px 20px;
-  }
   .recent-posts h1 {
     font-size: 1.2em;
   }
   .recent-posts h4 {
     font-size: 14px;
   }
-  .homepage-posts {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+  .recent-posts time {
+    display: none;
   }
+
   .article-title {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 700;
   }
   .post h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 1em;
     margin-bottom:1em;
     font-weight: 700;
   }
   .post h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
+  }
+  .pn-pager li a {
+    font-size: 1em;
   }
 }
