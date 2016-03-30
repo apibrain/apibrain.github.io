@@ -15,9 +15,7 @@ JavaScript 有着很奇怪的命名史。
 
 1996 年，网景将 JavaScript 提交给 [ECMA International（欧洲计算机制造商协会）](http://www.ecma-international.org/)进行标准化，并最终确定出新的语言标准，它就是 ECMAScript。自此，ECMAScript 成为所有 JavaScript 实现的基础，不过，由于 JavaScript 名字的历史原因和市场原因（很显然 ECMAScript 这个名字并不令人喜欢……），现实中我们只用 ECMAScript 称呼标准，平时都还是使用 JavaScript 来称呼这个语言。
 
-> 术语（译者注）：
-- 标准（Standard）： 用于定义与其他事物区别的一套规则
-- 实现（Implementation）： 某个标准的具体实施/真实实践
+> 术语（译者注）：<br>- 标准（Standard）： 用于定义与其他事物区别的一套规则<br>- 实现（Implementation）： 某个标准的具体实施/真实实践
 
 不过，JavaScript 开发者们并不怎么在乎这些，因为在诞生之后的 15 年里，ECMAScript 并没有多少变化，而且现实中的很多实现都已经和标准大相径庭。其实在第一版的 ECMAScript 发布后，很快又跟进发布了两个版本，但是自从 1999 年 ECMAScript 3 发布后，十年内都没有任何改动被成功添加到官方规范里。取而代之的，是各大浏览器厂商们争先进行自己的语言拓展，web 开发者们别无选择只能去尝试并且支持这些 API。即使是在 2009 年 ECMAScript 5 发布之后，仍然用了数年这些新规范才得到了浏览器的广泛支持，可是大部分开发者还是写着 ECMAScript 3 风格的代码，并不觉得有必要去了解这些规范。
 
@@ -45,5 +43,4 @@ JavaScript 有着很奇怪的命名史。
 - [Axel 的博客 - 2ality](http://www.2ality.com/) 也是很不错的 ES6 资源
 - 阮一峰：[ES6入门教程](http://es6.ruanyifeng.com)，中文 ECMAScript 6 教程，写得非常详细
 
-> 本文由黄玄翻译，有部分删减。
-> 原文链接：[ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？「译」](http://huangxuan.me/2015/09/22/js-version/)
+> 本文由黄玄翻译，有部分删减。<br>原文链接：[ES5, ES6, ES2016, ES.Next: JavaScript 的版本是怎么回事？「译」](http://huangxuan.me/2015/09/22/js-version/)
