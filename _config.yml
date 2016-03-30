@@ -1,3 +1,4 @@
+# author setting
 name: apibrain
 author: apibrain
 career: 无证程序员/厨师
@@ -8,7 +9,7 @@ email: apibrain[at]gmail.com
 # disqus: diqus-username
 
 ##Make sure to edit the above fields, especially for disqus.
-
+timezone: Asia/Shanghai
 permalink: /:title.html
 # highlighter: pygments
 markdown: kramdown
