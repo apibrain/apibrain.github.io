@@ -1,6 +1,6 @@
 name: apibrain
 author: apibrain
-career: 半吊子程序员/厨师
+career: 无证程序员/厨师
 baseurl: ''
 description: 关于技术的总结、归纳和思考
 github: http://www.github.com/apibrain
@@ -11,9 +11,7 @@ email: apibrain[at]gmail.com
 
 permalink: /:title.html
 # highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
+markdown: kramdown
 
 defaults:
   - scope:
