@@ -12,6 +12,8 @@ email: apibrain[at]gmail.com
 permalink: /:title.html
 # highlighter: pygments
 markdown: kramdown
+kramdown:
+  input: GFM
 
 defaults:
   - scope:
