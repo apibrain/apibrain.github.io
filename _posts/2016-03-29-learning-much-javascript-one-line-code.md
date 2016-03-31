@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 通过一行代码学习Javascript
+title: 通过一行代码学习JS：谈谈「位运算」在Javascript中的应用
 category: [前端开发, JavaScript]
 tags: [技巧, 随机颜色, 位运算]
 description: >

@@ -439,19 +439,24 @@ pre
   margin: 2em 0;
 }
 .article-list article {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
+}
+.article-list article h2 {
+  line-height: 22px;
 }
 .article-list article h2 a, .article-list article h2 a:visited {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   border-bottom: 0 none;
+  color: #3a3a3a;
 }
 .article-list article h2 a:hover {
   text-decoration: underline;
+  color: #d90006;
 }
 .excerpt {
-  font-size: 14px;
-  color: #777;
+  font-size: 1.05em;
+  color: #666;
 }
 
 .post
