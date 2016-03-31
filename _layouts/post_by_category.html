@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1 class="page-title">分类：{{ page.category }}</h1>
+<hr>
+<div class="article-list">
+	{% if site.categories[page.category] %}
+        {% for post in site.categories[page.category] %}
+        	<article>
+	            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	            <p class="excerpt">{{ post.excerpt }}</p>
+            </article>
+        {% endfor %}
+    {% else %}
+        <p>本分类下没有任何文章！</p>
+    {% endif %}
+</div>

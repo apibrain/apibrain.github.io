@@ -10,11 +10,7 @@ layout: default
     </small>
     {% endif %}
 
-    {% if page.category %}
-    <small>
-      &nbsp;<i class="fa fa-fw fa-folder-o"></i> {{ page.category }}
-    </small>
-    {% endif %}
+    {% include categories.html %}
 
   </p>
   <hr>

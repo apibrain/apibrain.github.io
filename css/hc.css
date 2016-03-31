@@ -413,8 +413,14 @@ pre
 
 .meta
 {
-  text-shadow:1px 1px #fff;
   color:#b6b6b6
+}
+.meta a, .meta a:visited {
+  color: #b6b6b6;
+  border-bottom: 0 none;
+}
+.meta a:hover {
+  text-decoration: underline;
 }
 
 #article
@@ -845,7 +851,7 @@ time
 }
 
 @media screen and (max-width: 500px) {
-  blockquote, blockquote p, p, .post ul li {
+  blockquote p, p, .post ul li {
     font-size: 1.1em;
   }
   #welcome-greeting > p

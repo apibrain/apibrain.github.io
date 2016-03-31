@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通过一行代码学习Javascript
-category: 前端开发, JavaScript
+category: [前端开发, JavaScript]
 tags: [技巧, 随机颜色, 位运算]
 description: >
     通过一条「帮你debug页面各层CSS」的Javascript代码，可以学到很多东西。

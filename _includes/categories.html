@@ -1,0 +1,16 @@
+{% assign categories = '' %}
+{% if page.categories and page.categories.size > 0 %}
+  {% for post_category in page.categories %}
+    {% for data_category in site.data.categories %}
+      {% if data_category.name == post_category %}
+          {% capture categories_content %}{{ categories }}<a href="/category/{{ data_category.slug }}/">{{ data_category.name }}</a>{% if forloop.last != false %}, {% endif %}{% endcapture %}
+          {% assign categories = categories_content %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
+
+{% if categories != '' %}
+<small>&nbsp;<i class="fa fa-fw fa-folder-open-o"></i> {{ categories }}</small>
+{% endif %}
