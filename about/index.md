@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 关于我
+title: 关于这个博客
+no_meta: 1
 ---
 
 ## 有什么？

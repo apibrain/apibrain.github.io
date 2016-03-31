@@ -1,4 +1,5 @@
 {% assign categories = '' %}
+
 {% if page.categories and page.categories.size > 0 %}
   {% for post_category in page.categories %}
     {% for data_category in site.data.categories %}
@@ -9,7 +10,6 @@
     {% endfor %}
   {% endfor %}
 {% endif %}
-
 
 {% if categories != '' %}
 <small><i class="fa fa-folder-open-o"></i> {{ categories }}</small>
