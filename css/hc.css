@@ -42,6 +42,7 @@ p
   line-height: 1.75em;
   font-size: 1.2em;
   margin-bottom: 1.5em;
+  text-align: justify;
 }
 
 .posts
@@ -414,6 +415,9 @@ pre
 .meta
 {
   color:#b6b6b6
+}
+.meta small {
+  margin-right: 6px;
 }
 .meta a, .meta a:visited {
   color: #b6b6b6;
