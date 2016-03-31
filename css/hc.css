@@ -825,7 +825,15 @@ time
 
 @media (max-width:767px) {
   .page-title {
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 1.75em;
+  }
+  .article-list article h2 {
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .article-list article h2 a, .article-list article h2 a:visited {
+    font-size: 18px;
   }
 .recent-posts time {
     display: none;
