@@ -824,6 +824,9 @@ time
 }
 
 @media (max-width:767px) {
+  .page-title {
+    font-size: 1.5em;
+  }
 .recent-posts time {
     display: none;
   }
@@ -863,6 +866,17 @@ time
 }
 
 @media screen and (max-width: 500px) {
+  .page-title {
+    font-weight: 700;
+    font-size: 1.3em;
+  }
+  .article-list article h2 {
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .article-list article h2 a, .article-list article h2 a:visited {
+    font-size: 16px;
+  }
   blockquote p, p, .post ul li {
     font-size: 1.1em;
   }
