@@ -109,11 +109,12 @@ a.navbar-brand img {
 .top-left-line {
   position: fixed;
   top:0;
-  left:0;
+  margin-left:-259px;
+  left:259px;
   height: 4px;
   width: 259px;
   background-color: #d90006;
-  z-index: 199001;
+  z-index: 1001;
 }
 #sidebar-wrapper hr {
   border-color: #f7f7f7;
@@ -876,9 +877,10 @@ time
     padding-top: 20px;
   }
 
-  #sidebar-wrapper {
+  #sidebar-wrapper, .top-left-line {
       left: 0px;
   }
+
  .nav-toggle {
     display: ;
   }
