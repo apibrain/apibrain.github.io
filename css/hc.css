@@ -247,9 +247,36 @@ ul,ol
   font-weight:lighter
 }
 
+div.highlighter-rouge {
+  background-color: #fffffc;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  margin-bottom: 2.4em;
+  padding-right: 1em;
+}
+.highlight {
+  background-color: transparent!important;
+  overflow: auto;
+}
+.highlight table td {
+  padding: 0;
+}
+.lineno {
+  color: #ddd;
+}
+.gutter {
+  border-right: 1px solid #e8e8e8;
+  background-color: #fafaf9;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 pre
 {
-  background:#f8f8f8
+  background-color:transparent;
+  border: 0 none;
+  border-radius: 0;
+  padding: 10.5px;
+  font-size: 12px;
 }
 
 .meta-tags a, .meta-tags a:visited {
@@ -487,9 +514,6 @@ pre
   max-width: 100%;
   height: auto;
   margin: 2em auto;
-}
-.highlight {
-  margin-bottom: 2em;
 }
 .user-social
 {
