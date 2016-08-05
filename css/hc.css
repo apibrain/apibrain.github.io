@@ -6,13 +6,13 @@ body
   border-top:solid #d90006;
   border-width:4px;
   font-size: 14px;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  font-family: "PingFang SC", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6
 {
   color:#d90006;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  font-family: "PingFang SC", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
 
 h1
@@ -39,7 +39,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
 p
 {
   font-weight:200;
-  line-height: 1.75em;
+  line-height: 1.85em;
   font-size: 1.2em;
   margin-bottom: 1.5em;
   text-align: justify;
@@ -257,8 +257,8 @@ ul,ol
 }
 
 div.highlighter-rouge {
-  background-color: #fffffc;
-  border: 1px solid #e8e8e8;
+  background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f4f5f6;
+  border: 0px solid #e4e8e8;
   border-radius: 4px;
   margin-bottom: 2.4em;
   padding-right: 1em;
@@ -284,9 +284,10 @@ pre
   background-color:transparent;
   border: 0 none;
   border-radius: 0;
-  padding: 10.5px;
+  padding: 1.5em;
   font-size: 12px;
   word-break:normal;
+  margin-bottom: 0;
 }
 
 .meta-tags a, .meta-tags a:visited {
