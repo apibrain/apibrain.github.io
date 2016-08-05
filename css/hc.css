@@ -26,23 +26,23 @@ h2,h3
   font-weight:normal;
 }
 
-h1 a,h2 a,h3 a,h4 a
-{
+h1 a,h2 a,h3 a,h4 a {
   color:#428fe0
 }
 
-h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
-{
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover {
   color:#29598c
 }
 
-p
-{
-  font-weight:200;
+p {
+  font-weight:normal;
   line-height: 1.85em;
   font-size: 1.2em;
   margin-bottom: 1.5em;
   text-align: justify;
+}
+ul, ul li, ol, ol li {
+  font-weight: 200;
 }
 
 .posts
@@ -92,12 +92,11 @@ a.navbar-brand img {
   border-radius: 100%;
 }
 
-#sidebar-wrapper
-{
+#sidebar-wrapper {
   margin-left:-258px;
   left:258px;
   width:259px;
-  background:#f0efe7;
+  background-color:#eeeee7;
   position:fixed;
   height:100%;
   overflow-y:auto;
@@ -204,7 +203,6 @@ a.navbar-brand img {
 .brand a, .brand a:visited {
   font-weight:200;
   color:#555;
-  font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
   text-shadow:1px 1px #fff;
   font-size: 32px;
 }
@@ -257,7 +255,8 @@ ul,ol
 }
 
 div.highlighter-rouge {
-  background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f4f5f6;
+  background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f6f6f8;
+  background-size: 30px 30px;
   border: 0px solid #e4e8e8;
   border-radius: 4px;
   margin-bottom: 2.4em;
@@ -348,7 +347,6 @@ pre
 .showcase-text
 {
   font-size:3em;
-  font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight:bolder;
   color:#fff;
   text-align:center;
@@ -387,7 +385,6 @@ pre
 
 #welcome-greeting p a
 {
-  font-weight:100;
   color:#d90006;
   border-bottom: 0 none;
 }
@@ -397,6 +394,7 @@ pre
   bottom:0;
   width:100%;
   font-size:.9em;
+  font-weight: 200;
   text-shadow:1px 1px #fff;
   padding-left:0px;
   margin-bottom:0;
@@ -428,7 +426,6 @@ pre
   border:1px solid rgba(255,255,255,.4);
   color:rgba(255,255,255,.8);
   font-weight:200;
-  font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
 }
 
 .showcase-button:hover
@@ -548,8 +545,6 @@ pre
 time
 {
   color:#c9c9c9;
-  font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  font-weight:200;
 }
 
 .pn-pager {
@@ -628,6 +623,7 @@ time
 }
 .homepage-posts time, .homepage-posts h4 {
   font-size: 1.2em;
+  font-weight: normal;
   margin: 0;
   border: 0px solid #f00;
   line-height: 36px;
@@ -652,7 +648,6 @@ time
 .project-container h1
 {
   font-size:3em;
-  font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight:bolder;
   color:#fff;
   text-align:center;
@@ -661,8 +656,6 @@ time
 
 .project-container p
 {
-  font-weight:200;
-  font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
   color:#fff;
   text-align:center;
   left-padding:20%
@@ -721,7 +714,6 @@ time
 
 .user-card h1
 {
-  font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
   font-weight:bolder;
   font-size:2.5em;
   line-height:55px;
