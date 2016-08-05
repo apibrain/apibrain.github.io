@@ -17,7 +17,7 @@ permalink: /:title.html
 markdown: kramdown
 highlighter: rouge
 # kramdown:
-#   input: GFM
+  # input: GFM
   # syntax_highlighter: rouge
   # syntax_highlighter_opts:
   #   line_numbers: false # bad idea, spans don't need linenos and would inherit this option
