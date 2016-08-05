@@ -42,7 +42,7 @@ p {
   text-align: justify;
 }
 ul, ul li, ol, ol li {
-  font-weight: 200;
+  font-weight: normal;
 }
 
 .posts
@@ -177,6 +177,10 @@ a.navbar-brand img {
 .sidebar-brand > h1 {
   margin: 0;
 }
+.sidebar-brand > .text-muted {
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
 .sidebar-brand > p {
   font-size: 14px;
 }
@@ -249,22 +253,22 @@ blockquote p {
   line-height: 1.6em;
 }
 
-ul,ol
-{
-  font-weight:lighter
-}
-
 div.highlighter-rouge {
-  background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f6f6f8;
-  background-size: 30px 30px;
   border: 0px solid #e4e8e8;
   border-radius: 4px;
   margin-bottom: 2.4em;
-  padding-right: 1em;
 }
 .highlight {
   background-color: transparent!important;
   overflow: auto;
+}
+.highlight .hljs {
+  padding: 1.5em;
+
+  background-image: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png);
+  background-repeat: repeat;
+  background-size: 30px 30px;
+
 }
 .highlight table td {
   padding: 0;
@@ -282,8 +286,8 @@ pre
 {
   background-color:transparent;
   border: 0 none;
-  border-radius: 0;
-  padding: 1.5em;
+  border-radius: 4px;
+  padding: 0;
   font-size: 12px;
   word-break:normal;
   margin-bottom: 0;
@@ -444,7 +448,7 @@ pre
 .article-title
 {
   font-size:2.2em;
-  font-weight:400;
+  font-weight:600;
   padding-top:15px;
   line-height: 1.4em;
 }
@@ -501,27 +505,30 @@ pre
   padding-bottom:30px
 }
 .post p {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .post h2 {
-  font-size: 2em;
+  font-size: 1.75em;
+  font-weight: 700;
   margin-top: 1.5em;
   margin-bottom:1.5em;
-}
-#article .post h2 {
-  color: #307730;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #eee;
 }
 .post h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
+  font-weight: 700;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eee;
 }
 .post ul {
   margin-bottom: 3em;
 }
 .post ul li {
-  line-height: 1.4em;
-  font-size: 1.2em;
+  line-height: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 0.8em;
 }
 .post img {
@@ -918,8 +925,18 @@ time
   .article-list article h2 a, .article-list article h2 a:visited {
     font-size: 16px;
   }
-  blockquote p, p, .post ul li {
-    font-size: 1.1em;
+  blockquote p, p, .post p, p {
+    font-size: 1em;
+    line-height: 1.85em;
+    text-align: left;
+  }
+  .post ul {
+    margin-left: 0;
+    padding-left: 1.2em;
+  }
+  .post ul li {
+    font-size: 0.95em;
+    line-height: 1.5em;
   }
   #welcome-greeting > p
   {
