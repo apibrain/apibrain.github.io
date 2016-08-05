@@ -1,5 +1,11 @@
 - slug: javascript
   name: JavaScript
 
+- slug: php
+  name: PHP
+
 - slug: frontend-dev
   name: 前端开发
+
+- slug: backend-dev
+  name: 后端开发
