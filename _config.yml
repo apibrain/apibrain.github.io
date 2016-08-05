@@ -4,14 +4,14 @@ author: apibrain
 career: 程序员，不分前后端
 baseurl: ''
 description: 关于技术的总结、归纳和思考
-github: http://www.github.com/apibrain
+github: "http://www.github.com/apibrain"
 email: apibrain[at]gmail.com
 # disqus: diqus-username
 
 # website
 url: http://apibrain.com/
 timezone: Asia/Shanghai
-permalink: /:title.html
+permalink: "/:title.html"
 
 # writing
 markdown: kramdown
