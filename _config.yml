@@ -16,16 +16,16 @@ permalink: "/:title.html"
 # writing
 markdown: kramdown
 highlighter: rouge
-# kramdown:
-# input: GFM
-# syntax_highlighter: rouge
-# syntax_highlighter_opts:
-#   line_numbers: false # bad idea, spans don't need linenos and would inherit this option
-#   span:
-#     line_numbers: false
-#   block:
-#     line_numbers: false  # set to true to show line number
-#     start_line: 1
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false  # set to true to show line number
+      start_line: 1
 
 #default
 defaults:
