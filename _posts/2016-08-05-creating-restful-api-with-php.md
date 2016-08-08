@@ -44,8 +44,6 @@ A `.htaccess` file provides directory level configuration on how a web server wi
 
 ```apache
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 ```
 
 ### What Did That Do?
