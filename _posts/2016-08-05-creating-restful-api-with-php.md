@@ -2,7 +2,6 @@
 layout: post
 title: Creating a RESTful API with PHP
 category: [后端开发, PHP]
-tags: [RESTful, API]
 description: >
     REST, or in the full form, Representational State Transfer has become the standard design architecture for developing web APIs
 excerpt: >
