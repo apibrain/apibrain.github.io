@@ -50,3 +50,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule api/v1/(.*)$ api/v1/api.php?request=$1 [QSA,NC,L]
 </IfModule>
 ```
+
+### What Did That Do?
+
+Let's walk through this file. The first thing that we do here is wrap everything in a check for the existence of mod_rewrite.c; if that Apache module is present, we can continue. We then turn the RewriteEngine On and prepare it to work by giving it two rules. These rules say to perform a Rewrite if the requested URI does not match an existing file or directory name.
