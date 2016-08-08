@@ -229,7 +229,7 @@ a.navbar-brand img {
 
 blockquote
 {
-  border-left:6px solid #D6DBE0;
+  border-left:4px solid #D6DBE0;
   background-color: #f8f8f8;
   padding-left:15px;
   font-size: 1em;
@@ -240,6 +240,10 @@ blockquote
 blockquote p {
   margin-bottom: 1em;
   line-height: 1.6em;
+  font-weight: normal;
+}
+.post blockquote p {
+  font-size: 1em;
 }
 
 div.highlighter-rouge {
@@ -248,15 +252,15 @@ div.highlighter-rouge {
   margin-bottom: 2.4em;
 }
 .highlight {
-  background-color: transparent!important;
+  background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f7f7f7;
+  background-size: 30px 30px;
   overflow: auto;
 }
 .highlight .hljs {
   padding: 1.5em;
-
-  background-image: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png);
-  background-repeat: repeat;
-  background-size: 30px 30px;
+  background: none;
+  overflow-wrap: normal;
+  white-space: pre;
 
 }
 .highlight table td {
