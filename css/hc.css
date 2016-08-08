@@ -287,6 +287,9 @@ pre
   line-height: 1.75em;
 }
 
+a.lnk-meta {
+  margin-right: 1em;
+}
 .meta-tags a, .meta-tags a:visited {
   display: inline-block;
   padding: 4px 14px;
@@ -515,6 +518,12 @@ pre
   margin-bottom: 1.2em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #eee;
+}
+.post h4 {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.3em;
 }
 .post ul {
   margin-bottom: 3em;
@@ -849,9 +858,9 @@ time
   display:none
 }
 
-#article h1,#article h2,#article h3
+#article h1,#article h2,#article h3,#article h4
 {
-  color:#3a3a3a;
+  color:#222;
 }
 
 @media (max-width:767px) {
@@ -972,6 +981,9 @@ time
     margin-bottom:1em;
   }
   .post h3 {
+    font-size: 1.1em;
+  }
+  .post h4 {
     font-size: 1em;
   }
   .pn-pager li a {
