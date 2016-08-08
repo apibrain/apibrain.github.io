@@ -40,7 +40,7 @@ However, before we can write either of those classes there's a third part of thi
 
 ### Writing a .htaccess File
 
-A `.htaccess` file provides directory level configuration on how a web server will handle requests to resources in the directory the .htaccess file itself lives in. Since we do not wish to have to create new PHP files for every endpoint that our API will contain (for several reasons one of which being that it creates issues with maintainability); instead we wish to have all requests that come to our API be routed to the controller which will then determine where the request intended to go, and forward it on to the code to handle that specific endpoint. With that in mind, let's create a `.htacccess` file:
+A `.htaccess` file provides directory level configuration on how a web server will handle requests to resources in the directory the `.htaccess` file itself lives in. Since we do not wish to have to create new PHP files for every endpoint that our API will contain (for several reasons one of which being that it creates issues with maintainability); instead we wish to have all requests that come to our API be routed to the controller which will then determine where the request intended to go, and forward it on to the code to handle that specific endpoint. With that in mind, let's create a `.htacccess` file:
 
 ```
 <IfModule mod_rewrite.c>
@@ -53,9 +53,9 @@ RewriteRule api/v1/(.*)$ api/v1/api.php?request=$1 [QSA,NC,L]
 
 ### What Did That Do?
 
-Let's walk through this file. The first thing that we do here is wrap everything in a check for the existence of mod_rewrite.c; if that Apache module is present, we can continue. We then turn the RewriteEngine On and prepare it to work by giving it two rules. These rules say to perform a Rewrite if the requested URI does not match an existing file or directory name.
+Let's walk through this file. The first thing that we do here is wrap everything in a check for the existence of `mod_rewrite.c`; if that Apache module is present, we can continue. We then turn the `RewriteEngine On` and prepare it to work by giving it two rules. These rules say to perform a Rewrite if the requested URI does not match an existing file or directory name.
 
-In the next line declares the actual RewriteRule. This says that any requests to api/v1/ that is not an existing file or directory should instead be sent to `api/v1/index.php`. The `(.*)` marks a named capture, which is sent along to the MyAPI.php script as well in the request variable through the use of the $1 delimiter. At the end of that line are some flags that configure how the rewrite is performed. Firstly, `[QSA]` means that the named capture will be appended to the newly created URI. Second `[NC]` means that our URIs are not case sensitive. Finally, the `[L]` flag indicates that mod_rewrite should not process any additional rules if this rule matches.
+In the next line declares the actual RewriteRule. This says that any requests to `api/v1/` that is not an existing file or directory should instead be sent to `api/v1/index.php`. The `(.*)` marks a named capture, which is sent along to the `MyAPI.php` script as well in the request variable through the use of the $1 delimiter. At the end of that line are some flags that configure how the rewrite is performed. Firstly, `[QSA]` means that the named capture will be appended to the newly created URI. Second `[NC]` means that our URIs are not case sensitive. Finally, the `[L]` flag indicates that mod_rewrite should not process any additional rules if this rule matches.
 
 ### Constructing the Abstract Class
 

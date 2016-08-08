@@ -255,6 +255,7 @@ div.highlighter-rouge {
   background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f7f7f7;
   background-size: 30px 30px;
   overflow: auto;
+  max-height: 48em;
 }
 .highlight .hljs {
   padding: 1.5em;
