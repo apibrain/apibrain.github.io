@@ -23,7 +23,7 @@ h1
 
 h2,h3
 {
-  font-weight:normal;
+  font-weight:700;
 }
 
 h1 a,h2 a,h3 a,h4 a {
@@ -35,21 +35,16 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover {
 }
 
 p {
-  font-weight:normal;
   line-height: 1.75em;
   font-size: 1.2em;
   margin-bottom: 1.5em;
   text-align: justify;
-}
-ul, ul li, ol, ol li {
-  font-weight: normal;
 }
 
 .posts
 {
   font-size:20px;
   list-style:none;
-  font-weight:lighter;
   line-height:250%;
   padding-bottom:30px
 }
@@ -59,12 +54,6 @@ ul, ul li, ol, ol li {
   width:80%;
   padding-right:0;
   padding-top:30px
-}
-
-.container a
-{
-  border-bottom:1px #8a8a8a dotted;
-  text-decoration:none
 }
 
 #wrapper
@@ -178,8 +167,8 @@ a.navbar-brand img {
   margin: 0;
 }
 .sidebar-brand > .text-muted {
-  font-weight: lighter;
   letter-spacing: -1px;
+  font-weight: 200;
 }
 .sidebar-brand > p {
   font-size: 14px;
@@ -189,7 +178,7 @@ a.navbar-brand img {
 {
   position: relative;
   font-size:15px;
-  font-weight:200;
+  font-weight: 300;
   color:#5d5f67
 }
 
@@ -205,10 +194,10 @@ a.navbar-brand img {
   font-size:1.4em;
 }
 .brand a, .brand a:visited {
-  font-weight:200;
   color:#555;
   text-shadow:1px 1px #fff;
   font-size: 32px;
+  font-weight: 200;
 }
 .brand a:hover {
   color: #666;
@@ -244,7 +233,7 @@ blockquote
   background-color: #f8f8f8;
   padding-left:15px;
   font-size: 1em;
-  color: #999;
+  color: #555;
   margin-bottom: 2.5em;
 }
 
@@ -352,7 +341,7 @@ pre
 .showcase-text
 {
   font-size:2em;
-  font-weight:bolder;
+  font-weight:700;
   color:#fff;
   text-align:center;
   padding-top:16%
@@ -381,7 +370,6 @@ pre
 #welcome-greeting > h1
 {
   font-size:3em;
-  font-weight:700;
   color:#d90006;
   line-height:200%
 }
@@ -405,7 +393,6 @@ pre
   bottom:0;
   width:100%;
   font-size:.9em;
-  font-weight: 200;
   text-shadow:1px 1px #fff;
   padding-left:0px;
   margin-bottom:0;
@@ -419,7 +406,6 @@ pre
 .label-danger
 {
   background-color:#697b7b;
-  font-weight:400;
   border-radius:.2em;
   font-size:120%
 }
@@ -436,7 +422,6 @@ pre
   background-color:transparent;
   border:1px solid rgba(255,255,255,.4);
   color:rgba(255,255,255,.8);
-  font-weight:200;
 }
 
 .showcase-button:hover
@@ -454,7 +439,7 @@ pre
 .article-title
 {
   font-size:2.2em;
-  font-weight:600;
+  font-weight:700;
   padding-top:15px;
   line-height: 1.4em;
 }
@@ -515,7 +500,6 @@ pre
 }
 .post h2 {
   font-size: 1.75em;
-  font-weight: 700;
   margin-top: 1.5em;
   margin-bottom:1.5em;
   padding-bottom: 0.4em;
@@ -523,7 +507,6 @@ pre
 }
 .post h3 {
   font-size: 1.4em;
-  font-weight: 700;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   padding-bottom: 0.3em;
@@ -668,7 +651,6 @@ time
 .project-container h1
 {
   font-size:3em;
-  font-weight:bolder;
   color:#fff;
   text-align:center;
   padding-top:20px
@@ -720,7 +702,7 @@ time
 
 .project-post h4
 {
-  font-weight:200;
+  font-weight:normal;
   font-size:1em
 }
 
@@ -734,7 +716,6 @@ time
 
 .user-card h1
 {
-  font-weight:bolder;
   font-size:2.5em;
   line-height:55px;
   color:#d90006
@@ -755,7 +736,6 @@ time
 .letter p
 {
   font-size:1.2em;
-  font-weight:lighter;
   color:#737373;
   text-shadow:1px 1px #fff
 }
@@ -876,7 +856,6 @@ time
     font-size: 1.75em;
   }
   .article-list article h2 {
-    font-weight: 700;
     line-height: 16px;
   }
   .article-list article h2 a, .article-list article h2 a:visited {
@@ -925,7 +904,6 @@ time
     font-size: 1.3em;
   }
   .article-list article h2 {
-    font-weight: 700;
     line-height: 16px;
   }
   .article-list article h2 a, .article-list article h2 a:visited {
@@ -988,11 +966,9 @@ time
     font-size: 1.2em;
     margin-top: 1em;
     margin-bottom:1em;
-    font-weight: 700;
   }
   .post h3 {
     font-size: 1em;
-    font-weight: 700;
   }
   .pn-pager li a {
     font-size: 1em;
