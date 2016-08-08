@@ -231,9 +231,9 @@ blockquote
 {
   border-left:4px solid #D6DBE0;
   background-color: #f8f8f8;
-  padding-left:15px;
+  padding:1.2em;
   font-size: 1em;
-  color: #555;
+  color: #777;
   margin-bottom: 2.5em;
 }
 
