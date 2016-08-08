@@ -273,6 +273,6 @@ If you visit `/api/v1/example` (and have the User and Token system setup) you sh
 
 ## That's a Wrap
 
-That's all there is to it...which is, well, really quite a lot actually.
+That's all there is to it...which is, well, really quite a lot actually. 
 
 > Author: [Corey Maynard](http://coreymaynard.com/)<br>From: [http://coreymaynard.com/blog/creating-a-restful-api-with-php/](http://coreymaynard.com/blog/creating-a-restful-api-with-php/)
