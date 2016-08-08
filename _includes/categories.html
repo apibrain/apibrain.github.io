@@ -4,7 +4,7 @@
   {% for post_category in page.categories %}
     {% for data_category in site.data.categories %}
       {% if data_category.name == post_category %}
-          {% capture categories_content %}{{ categories }}<a href="/category/{{ data_category.slug }}/">{{ data_category.name }}</a>{% if forloop.last != false %}, {% endif %}{% endcapture %}
+          {% capture categories_content %}{{ categories }}<a href="/category/{{ data_category.slug }}/" class="lnk-meta">{{ data_category.name }}</a>{% endcapture %}
           {% assign categories = categories_content %}
       {% endif %}
     {% endfor %}
