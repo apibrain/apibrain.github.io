@@ -253,16 +253,14 @@ div.highlighter-rouge {
 }
 .highlight {
   background: url(https://sf-static.b0.upaiyun.com/v-579b24f3/global/img/blueprint.png) repeat #f7f7f7;
-  background-size: 30px 30px;
+  background-size: 36px 36px;
   overflow: auto;
-  max-height: 48em;
 }
 .highlight .hljs {
   padding: 1.5em;
   background: none;
   overflow-wrap: normal;
   white-space: pre;
-
 }
 .highlight table td {
   padding: 0;
@@ -938,7 +936,7 @@ time
     padding-left: 1.2em;
   }
   .post ul li {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5em;
   }
   #welcome-greeting > p
@@ -955,18 +953,15 @@ time
       padding: 0 10px 0 10px;
   }
 
+  .highlight .hljs {
+    padding: 1.2em;
+  }
   .meta-tags {
     font-size: 0.9em;
   }
   .meta-tags a, .meta-tags a:visited {
-    display: inline-block;
-    padding: 1px 8px;
-    border: 1px solid #D6DBE0;
-    border-radius: 14px;
-    font-size: 0.8em;
-    color: #aaa;
-    text-decoration: none;
-    margin-right: 1em;
+    padding: 2px 8px;
+    font-size: 0.9em;
   }
 
   #welcome-greeting > h1 {
