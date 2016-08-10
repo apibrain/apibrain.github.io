@@ -27,3 +27,6 @@
 
 - slug: git-branch
   name: 分支管理
+
+- slug: code-deploy
+  name: 代码部署
