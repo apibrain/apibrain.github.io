@@ -928,7 +928,7 @@ time
   }
   blockquote p, p, .post p, p {
     font-size: 1.05em;
-    line-height: 1.5em;
+    line-height: 1.65em;
     text-align: left;
   }
   p {
@@ -1002,7 +1002,7 @@ time
     font-size: 1.1em;
   }
   .post h4 {
-    font-size: 1em;
+    font-size: 1.05em;
   }
   .pn-pager li a {
     font-size: 1em;
