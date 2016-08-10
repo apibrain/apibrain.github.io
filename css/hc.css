@@ -446,13 +446,13 @@ a.lnk-meta {
 {
   font-size:2.2em;
   font-weight:700;
-  padding-top:15px;
   line-height: 1.4em;
 }
 
 .meta
 {
-  color:#b6b6b6
+  color:#b6b6b6;
+  margin-top: -10px;
 }
 .meta small {
   margin-right: 6px;
@@ -468,9 +468,7 @@ a.lnk-meta {
 #article
 {
   margin-bottom:30px;
-  /*background-color:#f9f9f9;
-  box-shadow:1px 1px 0 1px #e8e8e8;*/
-  padding:10px 0;
+  padding:0;
 }
 
 .article-list {
