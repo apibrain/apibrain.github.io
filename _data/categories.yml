@@ -12,3 +12,6 @@
 
 - slug: git
   name: Git
+
+- slug: codeigniter
+  name: CodeIgniter
