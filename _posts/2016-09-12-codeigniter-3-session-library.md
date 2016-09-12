@@ -39,8 +39,8 @@ $this->session->set_userdata($newdata);
 // 直接使用PHP原生方式读取session，似乎是官方推荐的方法
 $name = $_SESSION['name'];
 
-// 使用魔术方法，session的名称name变成了session对象的一个属性
-$name = $this->session->name ;
+// 使用魔术方法，session 的名称 name 变成了 session 对象的一个属性
+$name = $this->session->name;
 
 // 与CI2的使用方法一样，这是为保持向后兼容性的一种用法
 $name = $this->session->userdata('name');
@@ -89,6 +89,7 @@ if (isset($_SESSION['some_name'])) {
 ```php
 // 直接 unset 超全局变量 $_SESSION 的key
 unset($_SESSION['some_name']);
+
 //或者批量删除
 unset(
     $_SESSION['some_name'],
@@ -97,12 +98,13 @@ unset(
 
 // 或者，使用 session 类提供的 unset_userdata() 方法进行删除
 $this->session->unset_userdata('some_name'); 
+
 //或者批量删除
 $array_items = array('username', 'email');
 $this->session->unset_userdata($array_items);
 ```
 
-总体上看，CI3 的 Session 类库设计理念是更加接近原生的函数和方法，同时为了保持向后兼容性，原来的方法也尽量保留了下来。与此同时，原来的 flash data 理念做了新的设计，加入了 temp data 的概念，那么这两个 data 有什么区别呢？
+总体上看，CI3 的 Session 类库设计理念是更加接近原生的函数和方法，同时为了保持向后兼容性，原来的方法（即：CI2提供的方法）也尽量保留了下来。与此同时，原来的 flash data 理念做了新的设计，加入了 temp data 的概念，那么这两个 data 有什么区别呢？
 
 ## flash data、temp data 与 user data 的区别
 
@@ -140,6 +142,7 @@ $_SESSION['item'] = 'value';
 
 //标记 item 的生命期只有300s
 $this->session->mark_as_temp('item', 300);
+
 //批量将 session 生命期标记为300s
 $this->session->mark_as_temp(array('item', 'item2'), 300);
 
@@ -153,7 +156,7 @@ $this->session->mark_as_temp(array(
 $this->session->set_tempdata('item', 'value', 300);
 ```
 
-temp data 的适用场景是：保存一些更加细粒度的、更加隐私的 session 数据。比如某些令牌 token，比较重要，为了安全让它的生命期更短一些，可以保证安全。temp data 的设计从某种方面保证了 session 拥有不同生命期的数据。
+temp data 的适用场景是：保存一些更加细粒度的、更加隐私的 session 数据。比如某些令牌 token，比较重要，为了安全让它的生命期更短一些，可以保证安全。**temp data 的设计从某种方面保证了 session 拥有不同生命期的数据**。
 
 ### 3、user data
 
@@ -183,7 +186,7 @@ $this->session->userdata('item');
 $this->session->userdata();
 ```
 
-但是要注意：这几种数据是分割开来的，不能使用 `$this->session->userdata('item')`，去访问一个设为 flash data 的数据：
+但是要注意：这几种数据是分割开来的，不能使用 `$this->session->userdata('item')` 方法，去访问一个设为 flash data 的数据：
 
 ```php
 $this->session->set_tempdata('item', 'value', 300);
@@ -195,13 +198,14 @@ $this->session->set_flashdata('item2', 'value');
 $this->session->userdata('item2');
 ```
 
-## Session数据的删除与销毁
+## Session 数据的删除与销毁
 
-session 数据的删除可以理解为细粒度的删除某个 session 数据，方法如下：
+Session 数据的删除可以理解为细粒度的删除某个 session 数据，方法如下：
 
 ```php
 // 删除名为 item 的 user data
 $this->session->unset_userdata('item');
+
 // 删除名为 item 的 temp data
 $this->session->unset_tempdata('item');
 
@@ -210,22 +214,24 @@ $this->session->unset_tempdata('item');
 unset($_SESSION['item']);
 ```
 
-session 销毁，则会使所有数据类型失效，包括 flash data 和 temp data：
+session 销毁，则会使所有类型的数据失效，包括 flash data 和 temp data：
 
 ```php
 // PHP原生销毁session的方法，推荐的方式
+// 这将删除 user data、flash data 以及 temp data
 session_destroy();
 
 // 或者调用 session 类的 sess_destroy() 方法来销毁 session
+// 这将删除 user data、flash data 以及 temp data
 $this->session->sess_destroy();
 ```
 
 ## 扩展内容：flash、temp 及 user data 的设计思路
 
-首先，三种类型的数据必定存在于 `$_SESSION` 超全局变量中，也就是说，使用 `set_tempdata()` 和 `set_flashdata()` 方法，都会把对应的名称加入到 `$_SESSION` 超全局变量中。不过这还没完，**CI会用一个叫 `__ci_vars` 的 session 数据来区分 flash、temp 与 user data 的不同**。
+首先，三种类型的数据必定存在于 `$_SESSION` 超全局变量中。也就是说，使用 `set_tempdata()` 和 `set_flashdata()` 方法，都会把对应的名称加入到 `$_SESSION` 超全局变量中。不过这还没完，**CI会用一个名为 `__ci_vars` 的 session 数据来区分 flash、temp 与 user data 的不同**。
 
 ```php
-// CI3：会定义一个名为 __ci_vars 的 session 变量
+// CI3：会定义一个名为 __ci_vars 的 session 变量，变量值为一个数组
 $_SESSION['__ci_vars'] = array();
 ```
 
