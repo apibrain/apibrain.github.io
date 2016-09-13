@@ -4,9 +4,9 @@ title: Javascript 设计模式之 Module 设计模式
 category: [JavaScript, 设计模式]
 tags: [模块化, 闭包, 匿名函数]
 description: >
-    CI3的 Session 类库设计理念是更加接近原生的函数和方法，同时为了保持向后兼容性，原来的方法也尽量保留了下来。与此同时，原来的 flash data 理念做了新的设计，加入了 temp data 的概念。
+    Javascript匿名闭包是让一切成为可能的基础，而这也是 JavaScript 最好的特性之一。
 excerpt: >
-    CI3的 Session 类库设计理念是更加接近原生的函数和方法，同时为了保持向后兼容性，原来的方法也尽量保留了下来。与此同时，原来的 flash data 理念做了新的设计，加入了 temp data 的概念。 
+    JavaScript 有一个特性叫做隐式全局变量：不管一个变量有没有用过，JavaScript 解释器反向遍历作用域链来查找整个变量的 var 声明，如果没有找到 var，解释器则假定该变量是全局变量；如果该变量用于了赋值操作的话，之前如果不存在的话，解释器则会自动创建它。
 ---
 
 ## 基本用法
