@@ -33,3 +33,12 @@
 
 - slug: session
   name: Session
+
+- slug: module
+  name: 模块化
+
+- slug: closure
+  name: 闭包
+
+- slug: anonymous-function
+  name: 匿名函数
