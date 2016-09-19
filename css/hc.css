@@ -522,10 +522,10 @@ a.lnk-meta {
   margin-bottom: 1.2em;
   padding-bottom: 0.3em;
 }
-.post ul {
-  margin-bottom: 3em;
+.post ul, .post ol {
+  margin-bottom: 2em;
 }
-.post ul li {
+.post ul li, .post ol li {
   line-height: 1.2em;
   font-size: 1.1em;
   margin-bottom: 0.8em;
