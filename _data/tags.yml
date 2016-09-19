@@ -42,3 +42,9 @@
 
 - slug: anonymous-function
   name: 匿名函数
+
+- slug: qrcode
+  name: 二维码
+
+- slug: web
+  name: 互联网
