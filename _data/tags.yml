@@ -48,3 +48,12 @@
 
 - slug: web
   name: 互联网
+
+- slug: rsync
+  name: Rsync
+
+- slug: remote-server
+  name: Remote Server
+
+- slug: data-synchronization
+  name: Data Synchronization
