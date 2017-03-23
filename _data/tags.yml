@@ -63,3 +63,9 @@
 
 - slug: nodejs
   name: Node.js
+
+- slug: remote-access
+  name: 远程访问
+
+- slug: ssh
+  name: SSH
