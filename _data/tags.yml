@@ -69,3 +69,6 @@
 
 - slug: ssh
   name: SSH
+
+- slug: dnsmasq
+  name: Dnsmasq
